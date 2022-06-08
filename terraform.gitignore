@@ -1,0 +1,38 @@
+	#  Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+#Terraform
+.terraform/*
+**/.terraform/*
+.terraform/
+**/.terraform/
+**/terraform.tfstate.*
+**/terraform.tfstate
+**/.terraform.tfstate.lock.info
+**/.terraform.lock.hcl
+**/*.plan
+**/output/
+
+# Compiled files
+*.tfstate
+*.tfstate.backup
+*.tfstate.lock.info
+*.terraform/providers/registry.terraform.io/hashicorp/azurerm/3.9.0/windows_amd64/terraform-provider-azurerm_v3.9.0_x5.exe
+
+# Go files
+vendor/
+_vendor-*/
+*.exe
+*.lock
+*.toml
+
+
+# Ignore any .tfvars files that are generated automatically for each Terraform run. Most
+# .tfvars files are managed as part of configuration and so should be included in
+# version control.
+#
+# example.tfvars
