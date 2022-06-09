@@ -18,8 +18,8 @@ steps:
 
 
 - task: TerraformCLI@0
-  displayName: Terraform Apply
+  displayName: Terraform destroy
   inputs:
-    command: 'apply'
+    command: 'destroy'
     allowTelemetryCollection: false
 
