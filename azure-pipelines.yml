@@ -14,7 +14,7 @@ steps:
   displayName: Terraform Init
   inputs:
     command: 'init'
-    backendType: 'azurerm'
+    backendType: 'selfConfigured'
     allowTelemetryCollection: true
 
 
