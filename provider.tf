@@ -15,7 +15,7 @@ provider "azurerm" {
 ## Terraform State State Storage ##
 terraform {
   backend "azurerm" {
-    resource_group_name  = "aks-storage-RG-uk west"
+    resource_group_name  = "aks-storage-RG"
     storage_account_name = "tfstate8018"
     container_name       = "tfstate"
     key                  = "terraform.tfstate"
