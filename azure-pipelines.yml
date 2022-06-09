@@ -1,0 +1,20 @@
+trigger:
+  enabled: false
+stages:
+- stage: __default
+  jobs:
+  - job: Job
+    pool:
+      name: 'TestAgentPool'
+    steps:
+    - task: TerraformCLI@0
+      displayName: Terraform Init
+      inputs:
+        command: 'init'
+        allowTelemetryCollection: true
+    - task: TerraformCLI@0
+      displayName: Terraform Plan
+      inputs:
+        command: 'plan'
+        allowTelemetryCollection: false
+
